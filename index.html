@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="settings-sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3 data-i18n="settings">الإعدادات</h3>
+            <button id="close-sidebar">×</button>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="darkMode">الوضع الداكن</span>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="fontSize">حجم الخط</span>
+            <div class="setting-controls">
+                <button class="setting-btn" id="font-decrease">A-</button>
+                <button class="setting-btn" id="font-increase">A+</button>
+            </div>
+        </div>
+        <div class="setting-item">
+            <span data-i18n="language">اللغة</span>
+            <button class="setting-btn" id="lang-toggle">عربي</button>
+        </div>
+    </div>
+    <div id="sidebar-overlay" class="overlay"></div>
+
+    <header class="main-header">
+        <img src="images/settings.png" alt="Settings" class="settings-img" id="open-settings">
+        <div class="header-center">
+            <img src="images/paw.png" alt="Paw" class="paw-img">
+            <h1>Loving Homes</h1>
+        </div>
+        <img src="images/logo.png" alt="logo" class="logo-full-height">
+    </header>
+
+    <nav class="navbar">
+        <button class="nav-button" data-i18n="home">الصفحة الرئيسية</button>
+        <button class="nav-button" data-i18n="facilities">المرافق المقدمة</button>
+        <button class="nav-button" data-i18n="packages">الحزم المقدمة</button>
+        <button class="nav-button" data-i18n="contact">اتصل بنا</button>
+    </nav>
+
+    <section class="intro-section">
+        <div class="intro-container">
+            <p data-i18n="intro">موقع لوفينغ هومز هو موقع إلكتروني لفندق متخصص في رعاية الكلاب في هونج كونج، يهدف إلى عرض الخدمات والمرافق التي يقدمها بطريقة عصرية وجذابة. يوفر الموقع معلومات تفصيلية عن الحزم المقدمة مثل الحزمة المميزة والكلاسيكية واليومية بالإضافة إلى الخدمات الإضافية للحيوانات الأليفة. كما يساعد العملاء على التواصل مع الشركة وطلب المزيد من المعلومات مع دعم التصفح المرن عبر الأجهزة المختلفة.</p>
+        </div>
+    </section>
+
+    <div class="cards-layout">
+        <div class="card-item">
+            <h3 class="card-label" data-i18n="facilitiesTitle">اهم المرافق المقدمة</h3>
+            <div class="card-box">
+                <p data-i18n="vet">خدمات بيطرية متاحة</p>
+                <img src="images/vet.png" alt="Vet">
+            </div>
+        </div>
+        <div class="card-item">
+            <h3 class="card-label" data-i18n="otherFacilities">المرافق الأخرى</h3>
+            <div class="card-box">
+                <p data-i18n="monitoring">مراقبة الحيوانات</p>
+                <img src="images/monitoring.png" alt="Monitor">
+            </div>
+        </div>
+        <div class="card-item">
+            <h3 class="card-label" data-i18n="packagesTitle">اهم الحزم المقدمة</h3>
+            <div class="card-box special-card">
+                <p class="large-text" data-i18n="specialPackage">الحزم المميزة</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
